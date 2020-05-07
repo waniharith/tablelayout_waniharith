@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+<title>Table as Layout</title>
+</head>
+
+<style>
+* {box-sizing: border-box;}
+body {font-family: Arial;}
+
+header {background-color:Violet;
+		padding: 30px;
+		text-align: center;
+		font-size: 36px;
+		color: white;}
+		
+nav {float: left;
+	width: 50%;
+	height: 300px;
+	background:Pink;
+	padding: 30px;}
+	
+nav ul {list-style-type: none;
+		padding: 5;}
+		
+article {float: left;
+		 padding: 20px;
+		 width: 50%;
+		 Backgound-color: white;
+		 height 300px;}
+		
+section:after {content: "";
+			   display: table;
+			   clear: both;}
+			   
+footer {background-color:SlateBlue;
+		padding: 10px;
+		text-align: center;
+		color: yellow;}
+		
+@media (max-width: 600px){nav, article{width:90%;
+									   height: auto;}}
+
+</style>
+</head>
+<body>
+
+<header>
+<h2><img src="pictures/gambar1.png"width="900px">
+</header>
+
+<section>
+	<nav>
+		<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Biodata</a></li>
+		<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+	
+	<article>
+		<p><br>When you surround yourself with positive vibes, it can have a powerful effect on all aspects of your life. We have a great collection of good vibe quotes to help you harness that positive energy so you can feel happy and radiant from the inside out.</br></p>
+
+		<p>Your smile will give you a positive countenance that will make people feel comfortable around you. Happiness is when your life fulfills your needs. In other words, happiness comes when you feel satisfied and fulfilled.</p>
+	</article>
+</section>
+
+<footer>
+	<p>The end</p>
+</footer>
+
+</body>
+</html>
+		
+
